@@ -3,46 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <title>Aprendiendo Git</title>
-  <style>
-
-    /*Anatomia de las reglas CSS
-      Selector {
-        propiedad: valor;
-        propiedad: valor;
-        propiedad: valor;
-      }
-    */
-
-    a {
-      background-color: #000;
-      color: #FFF;
-      text-decoration:none;
-      font-
-      : Helvetica, Arial, Open San-serif;
-      padding-left: 5px;
-      padding-right: 5px;
-        }
-
-    a:hover /*PSEUDO CLASES*/ {
-      background-color: #FFF;
-      color: #000;
-      border: 1px solid #000;
-    }
-
-    h2 {
-      color: white;
-      font-size: 22px;
-      font-family: Arial;
-      background-color: black;
-    }
-
-  </style>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-  <img width="350" src="http://elfreneticoinformatico.com/wp-content/uploads/2017/10/GitHubLogo-676x251.png" alt="">
   <H1>Aprendiendo con git</H1>
   <h2>(y no morir en el intento...)</h2>
+  
+  <img id="foto-linus" width="150" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/LinuxCon_Europe_Linus_Torvalds_03_%28cropped%29.jpg/220px-LinuxCon_Europe_Linus_Torvalds_03_%28cropped%29.jpg" alt="">
+
+  <h3>INTRODUCCIÓN</h3>
+    <p>¿Qué es <a href="https://github.com/">GIT</a>?</p>
+    <p>¿Qué es un controlador de versiones?</p>
+    <p>Carácteristicas</p>
+    <p>Ordenes básicas de git</p>
+
+  <h3>¿QUÉ ES GIT?</h3>
   <p>Git es un software <strong>controlador de versiones</strong> diseñado por <a href="https://es.wikipedia.org/wiki/Linus_Torvalds" target="_blank">Linus Torvalds</a>.</p>
-  <img width="150" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/LinuxCon_Europe_Linus_Torvalds_03_%28cropped%29.jpg/220px-LinuxCon_Europe_Linus_Torvalds_03_%28cropped%29.jpg" alt="">
-</body>
-</html>
+
+  <img width="350" src="http://elfreneticoinformatico.com/wp-content/uploads/2017/10/GitHubLogo-676x251.png" alt="">
+
+
+  <h3>¿QUÉ ES UN CONTROLADOR DE VERSIONES?</h3>
+
+  <p>Se define como control de versiones a la gestión de los diversos cambios que se realizan sobre los elementos de algún producto o una configuración del mismo es decir a la gestión de los diversos cambios que se realizan sobre los elementos de algún producto o una configuración, y para los que aún no les queda claro del todo, control de versiones es lo que se hace al momento de estar desarrollando un software o una página web. Exactamente es eso que haces cuando subes y actualizas tu código en la nube, o le añades alguna parte o simplemente le editas cosas que no funcionan como deberían o al menos no como tú esperarías.</p>
+
+  <h3>CARÁCTERISTICAS DE GIT</h3>
+
+  <p>Git fue creado pensando en la eficiencia y la confiabilidad del mantenimiento de versiones de aplicaciones cuando éstas tienen un gran número de archivos de código fuente, es decir Git nos proporciona las herramientas para desarrollar un trabajo en equipo de manera inteligente y rápida y por trabajo nos referimos a algún software o página que implique código el cual necesitemos hacerlo con un grupo de personas.</p>
+
+  <p>Rapidez en la gestión de ramas, debido a que Git nos dice que un cambio será fusionado mucho más frecuentemente de lo que se escribe originalmente.</p>
+  <p>Gestión distribuida; Los cambios se importan como ramas adicionales y pueden ser fusionados de la misma manera como se hace en la rama local.</p>
+  <p>Gestión eficiente de proyectos grandes.</p>
+  <p>Realmacenamiento periódico en paquetes.</p>
+
+  <h3>ORDENES BÁSICAS</h3>
+  <p>Iniciar un repositorio vacío en una carpeta especifica:<p>
+    <p>git init</p>
+    <p>Añadir un archivo especifico:</p>
+    <p>git add “nombre_de_archivo”</p>
+    <p>Añadir todos los archivos del directorio:</p>
+    <p>git add</p>
+    <p>Confirmar los cambios realizados:</p>
+    <p>git commit –m “mensaje”</p>
+    <p>Revertir el commit:</p>
+    <p>git revert “hash_commit"</p>
+    <p>Subir la rama(branch) al servidor remoto:</p>
+    <p>git push origin “nombre rama”</p>
+    <p>Mostrar el estado actual de la rama(branch), como los cambios que hay sin hacer commit:</p> 
+    <p>git status</p>  
+
+
+  </body>
+  </html>
