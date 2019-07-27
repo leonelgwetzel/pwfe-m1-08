@@ -21,9 +21,7 @@ a {
 a:hover /*PSEUDO CLASES*/ {
   background-color:#00003D ;
   color: black;
-  
-
-}
+  }
 
 p{
   line-height: 1.5;
@@ -47,7 +45,7 @@ h3 {
 #foto-linus {
   display: block;
   /*REGLA DEL RELOJ: X1 X2 X3 X4 --> SIGUEN EL SENTIDO DEL RELOJ (X1= TOP, X2=RIGHT, X3=BOTTOM, X4=LEFT*/
-  margin: 0 auto 0 auto;
+  margin: 50px auto 50px auto;
   border-top: solid 5px;
   border-left: solid 5px;
   border-right: solid 5px;
