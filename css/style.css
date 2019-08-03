@@ -19,12 +19,13 @@ header h1 {
 	float: left;
 	background-image: url("../img/logo.png");
 	background-repeat: no-repeat;
-	padding-left: 80px;
-	height: 50px;
-
-	margin-left: 15px;
-	margin-top: 15px;
-	font-size: 30px;
+	background-size: contain;
+	padding-left: 65px;
+	font-weight: 700;
+	font-size: 28px;
+	margin-top: 13px;
+	margin-bottom: 13px;
+	
 }
 
 a {
@@ -69,7 +70,7 @@ img {
 	background-color: #19181f;
 	overflow: hidden;
 	position: relative;
-	animation: 15s slider backwards;
+	animation: 15s slider infinite;
 }
 
 #noticias-destacadas figure {
