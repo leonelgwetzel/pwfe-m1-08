@@ -89,45 +89,48 @@ img {
 
 /* ↓ Listado de noticias ↓ */
 .noticias {
-	margin: 0 30px 0 0px;
+
+	margin-right: 30px;
 	overflow-x: hidden;
 	background-color: #FFF;
-	width: 90%
+	width: 95%;
 	
 }
 
 .noticia-img {
 	float: left;
 	width: 30%;
-	padding: 20px 30px 30px 50px;
+	padding: 20px 50px 30px 50px;
 }
 
 .noticia-txt {
-	padding-top: 30px;
+	padding-top: 55px;
+	width: 85%;
 
 }
 
 .noticia-txt h3 {
 	font-size: 29px;
+	font-weight: bolder;
 	text-align: left;
-	font-weight: 700;
-	line-height: 30px;
-	padding-bottom: 10px;
+	line-height: 35px;
+	padding-bottom: 15px;
 
 
 }
 
 .noticia-txt p,a {
-	font-size: 17px;
+	font-size: 19px;
 	color: #66645f;
-	letter-spacing: 0.5pt;
-	line-height: 25px;
+	line-height: 30px;
+
 
 }
 
 hr {
 	width: 96%;
 	margin: 0 30px 0 30px;
+	border: 1px solid lightgray;
 
 }
 
