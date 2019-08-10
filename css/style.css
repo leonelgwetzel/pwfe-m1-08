@@ -95,7 +95,16 @@ img {
 	justify-content: space-evenly; /*flex-start , center, flex-end, space-around, space-between, space-evely*/
 	align-items: center; /*flex-start. center, flex-end, strech, baseline*/
 
+	border-bottom: 1px solid #CCCCCC;
+	margin: 0 15px 0 15px;
+	padding: 15px 0 15px 0;
+
 }
+
+.noticias:last-child {
+	border: none;
+}
+
 
 .noticia-img { /*Item Flexible*/
 	width: 25%;
@@ -105,58 +114,60 @@ img {
 
 .noticia-txt{ /*Item Flexible*/
 	width: 65%;
-	background-color: orange;
-}
-
-
-/*
-.noticias {
-	overflow: hidden;
-	background-color: #FFF;
-	width: 95%;
-	
-}
-
-.noticia-img {
-	float: left;
-	width: 30%;
-	padding: 20px 0px 30px 50px;
-}
-
-.noticia-txt {
-	padding-top: 55px;
-	width: 65%;
-	float: right;
-
+	line-height: 1.5;
 }
 
 .noticia-txt h3 {
-	font-size: 29px;
-	font-weight: bolder;
-	text-align: left;
-	line-height: 35px;
-	padding-bottom: 15px;
-
+	font-size: 24px;
+	font-weight: 600;
 
 }
 
-.noticia-txt p,a {
-	font-size: 19px;
-	color: #66645f;
-	line-height: 30px;
-
-
-}
-
-hr {
-	width: 96%;
-	margin: 0 30px 0 30px;
-	border: 1px solid lightgray;
-
+.noticia-txt a {
+	color: #000;
+	font-weight: 600;
 }
 
 
-*/
+#tabla-posiciones table {
+	width: 70%;
+	margin: auto;
+}
+
+#tabla-posiciones td, #tabla-posiciones th {
+	padding: 10px;
+	vertical-align: middle;
+}
+
+#tabla-posiciones th {
+	background-color: red;
+	color: #fff;
+	font-weight: 700;
+	font-size: 16px;
+}
+
+
+#tabla-posiciones tr {
+	background-color: #d9d9d9;
+	border-bottom: 1px solid #AAA;
+}
+
+#tabla-posiciones tr:last-child, #tabla-posiciones tr:first-child {
+	border:none;
+}
+
+#tabla-posiciones td:nth-child(odd) {
+	font-weight: 600;
+	font-size: 18px;
+	text-align: center;
+}
+
+#tabla-posiciones td span {
+	color: #34799e;
+	font-weight: 600;
+}
+
+
 
 /* Animaciones CSS */
 
