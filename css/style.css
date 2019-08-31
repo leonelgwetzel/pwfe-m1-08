@@ -128,10 +128,10 @@ img {
 	font-weight: 600;
 }
 
-
 #tabla-posiciones table {
 	width: 70%;
 	margin: auto;
+	margin-top: 50px !important;
 }
 
 #tabla-posiciones td, #tabla-posiciones th {
