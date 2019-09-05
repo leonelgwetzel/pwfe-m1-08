@@ -21,7 +21,7 @@
 
 		<section>
 			<h1>Calcular IVA</h1>
-			<input id="precio" type="number" placeholder="Colocar valor">
+			<input id="precio" type="number" placeholder="Colocar valor" onchange="calcularIVA()">
 			<p class="mensaje">El precio con IVA es de ar$<span class="total">0</span></p>
 		</section>
 
@@ -33,12 +33,17 @@
 		<script>
 			function calcularIVA(){
 				/* 1) Seleccionar el campo numérico y guardarlo en una variable */
-
+				var dato = document.getElementById("precio").value;
 				/* 2) Obtener el valor del campo */
-
+				var span = document.querySelector("span");
 				/* 3) Escribir en el span el valor del campo + IVA */
-
+				span.innerText = dato * 1.21;
 				/* 4) Si el valor con IVA es superior a 100 modificar el estilo del mensaje */
+				if (dato * 1.21 > 100) {
+					span.style.color = "red"
+				} else {
+					span.style.color = "black"
+				}
 			}
 		</script>
 	</body>
