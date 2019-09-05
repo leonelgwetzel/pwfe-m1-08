@@ -35,16 +35,22 @@
 		<script>
 			function calcularIVA(){
 				/* 1) Seleccionar el campo numérico y guardarlo en una variable */
-
+				var dato = document.getElementById("precio").value	;
 				/* 2) Obtener el valor del campo */ 
-
+				var span = document.querySelector("span");
 				/* 3) Escribir en el span el valor del campo + IVA */
-
+				span.innerText = dato * 1.21;
 				/* 4) Si el valor con iva es superior a 100 asignar la clase "alerta" al mensaje, si es menor entonces quitarla */
+				if (dato * 1.21 > 100) {
+					span.classList.add("alerta");
+				}else {
+					span.classList.remove("alerta");
+				}
 			}
 			/* 5) seleccionar el boton y guardarlo en una variable */
-
+			var btn = document.getElementById("calcular");
 			/* 6) asignar al click del boton la funcion calcularIVA */
+			btn.onclick = function(){calcularIVA()};
 		</script>
 	</body>
 </html>
