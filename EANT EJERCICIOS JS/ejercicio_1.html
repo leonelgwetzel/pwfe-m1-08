@@ -34,13 +34,15 @@
 		/* 2) Modificar el texto interno de esta variable
 		titulo.innerText = "Hola desde un script de JS"
 
-		/*Manipulacion de ESTRUCTURA
+		/*Manipulacion de ESTRUCTURA . manipular la etiqueta html y sus atributos
 			//titulo.style.color = "violet"
 			titulo.classList.add("alerta")
 			titulo.id = "alto-titulo"
 
 			/*Manipulacion de COMPORTAMIENTO*/
-			titulo.onclick = modificarTitulo
+			titulo.onclick = modificarTitulo;
+
+			setTimeout(modificarTitulo, 3000)
 
 				function modificarTitulo(){
 				titulo.innerText = "Hola desde un Script de JS"
